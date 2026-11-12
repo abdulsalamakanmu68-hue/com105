@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ÉLAN is a modern Lagos dining room celebrating seasonal Nigerian ingredients and thoughtful cooking.">
+  <title>Peace Resturant and Open bar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Primary navigation -->
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="ÉLAN home">ÉLAN<span>.</span></a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="menu-toggle-label">Menu</span>
+      <span class="menu-toggle-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="button button-small nav-reservation" href="#contact">Reserve a table <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Restaurant introduction -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A Lagos dining room · Est. 2018</p>
+        <h1 id="hero-title">A little more<br>than <em>a meal.</em></h1>
+        <p class="hero-intro">A modern expression of Nigerian hospitality, shaped by the seasons and made to be shared.</p>
+        <a class="text-link" href="#menu">Explore our menu <span aria-hidden="true">↘</span></a>
+      </div>
+      <figure class="hero-image">
+        <img src="assets/hero-dining.jpg" alt="A softly lit restaurant dining room set for an intimate dinner">
+        <figcaption>Victoria Island, Lagos</figcaption>
+      </figure>
+    </section>
+
+    <!-- Restaurant story and philosophy -->
+    <section class="about section-pad" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">Our point of view</p>
+        <h2 id="about-title">Rooted here.<br><em>Always becoming.</em></h2>
+      </div>
+      <div class="about-image-wrap">
+        <img src="assets/about-table.jpg" alt="A generous table laid with seasonal dishes and fresh ingredients" loading="lazy">
+        <span class="image-note">Good things take time.</span>
+      </div>
+      <div class="about-copy">
+        <p class="large-copy">ÉLAN began with a simple thought: the best evenings feel both entirely new and wonderfully familiar.</p>
+        <p>Since opening our doors in 2018, we have built our kitchen around the ingredients, growers and food traditions of Nigeria. Our menu moves with the market; our welcome never does.</p>
+        <a class="text-link" href="#contact">Come find us <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="about-aside">Thoughtful food.<br>Unhurried company.</p>
+    </section>
+
+    <!-- Menu lists and prices -->
+    <section class="menu-section section-pad" id="menu" aria-labelledby="menu-title">
+      <div class="menu-heading">
+        <div>
+          <p class="eyebrow">From our kitchen</p>
+          <h2 id="menu-title">The <em>menu</em></h2>
+        </div>
+        <p>Seasonal by nature, Nigerian at heart.<br>Our menu changes with what is best today.</p>
+      </div>
+
+      <div class="menu-layout">
+        <figure class="menu-image">
+          <img src="assets/dish-fish.jpg" alt="Grilled fish served with greens and a bright pepper sauce" loading="lazy">
+          <figcaption>From the coast, with care</figcaption>
+        </figure>
+
+        <div class="menu-categories">
+          <section class="menu-category" aria-labelledby="small-plates-title">
+            <h3 id="small-plates-title">To begin <span>Small plates</span></h3>
+            <ul class="menu-items">
+              <li><div><h4>Charred plantain</h4><p>Smoked groundnut, lime, garden herbs</p></div><span class="price">₦8,500</span></li>
+              <li><div><h4>Tomato &amp; pawpaw</h4><p>Heirloom tomato, ripe pawpaw, ata rodo</p></div><span class="price">₦9,000</span></li>
+              <li><div><h4>Suya-spiced prawns</h4><p>Fire-kissed prawns, citrus, soft herbs</p></div><span class="price">₦14,000</span></li>
+            </ul>
+          </section>
+
+          <section class="menu-category" aria-labelledby="mains-title">
+            <h3 id="mains-title">The main event <span>From land &amp; sea</span></h3>
+            <ul class="menu-items">
+              <li><div><h4>Charcoal-grilled croaker</h4><p>Market greens, fermented pepper butter</p></div><span class="price">₦32,000</span></li>
+              <li><div><h4>Slow-braised short rib</h4><p>Ofada rice, rich, slow-cooked sauce</p></div><span class="price">₦36,000</span></li>
+              <li><div><h4>Garden jollof</h4><p>Smoky rice, seasonal vegetables, coconut</p></div><span class="price">₦22,000</span></li>
+            </ul>
+          </section>
+
+          <section class="menu-category" aria-labelledby="sweet-title">
+            <h3 id="sweet-title">A little sweetness <span>To finish</span></h3>
+            <ul class="menu-items">
+              <li><div><h4>Ginger milk cake</h4><p>Spiced cream, toasted coconut</p></div><span class="price">₦10,000</span></li>
+              <li><div><h4>Chocolate &amp; malt</h4><p>Dark chocolate, house-made malt ice cream</p></div><span class="price">₦12,000</span></li>
+              <li><div><h4>Seasonal fruit</h4><p>Today's best from our growers</p></div><span class="price">₦8,000</span></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <p class="menu-note">Please let us know about any allergies when you book. Prices are in Nigerian naira.</p>
+    </section>
+
+    <!-- Contact details and demo enquiry form -->
+    <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="contact-heading">
+        <p class="eyebrow">Your table is waiting</p>
+        <h2 id="contact-title">Stay a <em>while.</em></h2>
+        <p>For a table, a question or simply a hello, we would love to hear from you.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-details">
+          <div class="detail-group">
+            <h3>Find us</h3>
+            <address>14 Akin Adesola Street<br>Victoria Island, Lagos, Nigeria</address>
+          </div>
+          <div class="detail-group">
+            <h3>Say hello</h3>
+            <p><a href="tel:+2342015550148">+234 (0) 201 555 0148</a><br><a href="mailto:hello@elandining.ng">hello@elandining.ng</a></p>
+          </div>
+          <div class="detail-group">
+            <h3>Opening hours</h3>
+            <ul class="hours-list">
+              <li><span>Tue – Fri</span><span>12:00 – 22:00</span></li>
+              <li><span>Saturday</span><span>12:00 – 23:00</span></li>
+              <li><span>Sunday</span><span>12:00 – 20:00</span></li>
+              <li><span>Monday</span><span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="full-name">Full name</label>
+            <input id="full-name" name="fullName" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button class="button form-submit" type="submit">Send an enquiry <span aria-hidden="true">↗</span></button>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          <p class="form-note">This demonstration form does not send or store messages.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#home" aria-label="ÉLAN home">ÉLAN<span>.</span></a>
+    <p>Good food, good company, always.</p>
+    <a href="#home" class="back-to-top">Back to top ↑</a>
+    <small>© 2026 ÉLAN — Modern Dining</small>
+  </footer>
+</body>
+</html>
